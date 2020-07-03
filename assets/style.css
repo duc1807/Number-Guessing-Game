@@ -1,0 +1,133 @@
+.true {
+    animation: true 2s;
+}
+
+@keyframes true {
+    0% {
+        border: 2px solid green;
+    }
+    25% {
+        border: 1px solid black;
+    }
+    50% {
+        border: 2px solid green;
+    }
+    75% {
+        border: 1px solid black;
+    }
+    100% {
+        border: 2px solid green;
+    }
+}
+
+.default {}
+
+#message {
+    min-height: 50px;
+}
+
+body {
+    background-image: url("./images/ok.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 150px;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    font-size: 20px;
+}
+
+input:hover,
+button:hover {
+    cursor: pointer;
+}
+
+#like {
+    width: 170px;
+    margin-top: 120px;
+    margin-left: -370px;
+    opacity: 0;
+}
+
+.ok {
+    opacity: 0;
+    z-index: -2;
+}
+
+.ok2 {
+    opacity: 1;
+    z-index: 2;
+}
+
+.dislike {
+    width: 190px;
+    margin-top: 120px;
+    margin-left: 200px;
+    animation: blink2 0.7s;
+}
+
+.like {
+    width: 170px;
+    margin-top: 120px;
+    margin-left: -370px;
+    animation: blink 0.7s;
+}
+
+#warn {
+    background-color: red;
+    width: 500px;
+    margin-top: 4%;
+    margin-left: 32%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-image: url('./images/gameover.jpg');
+    opacity: 0;
+    z-index: -2;
+}
+
+div>input {
+    margin-top: 32%;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink2 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#dislike {
+    width: 190px;
+    margin-top: 120px;
+    margin-left: 200px;
+    opacity: 0;
+}
+
+#like,
+#dislike {
+    position: absolute;
+}

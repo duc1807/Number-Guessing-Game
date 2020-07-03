@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./public/favicon.png">
+    <title>Secret Number Game</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+
+<body>
+    <img id="like" class="ok" src="./assets/images/like.jpg">
+    <img id="dislike" class="ok" src="./assets/images/dislike.jpg">
+    <div id="warn">
+        <input type="button" value="New Game" onclick="hideAndStartNewGameButton(); newGame()">
+    </div>
+
+    <h1>Secret Number Game</h1>
+    <div id="message">Let guess the secret number!</div>
+    <br>
+    <input type="number" id="anumber">
+    <button id="btn">Guest</button>
+
+    <h1>History</h1>
+    <input type="button" value="Clear history" onclick="clearAllHistory()"></input><br><br>
+    <div id="his"></div>
+
+    <script src="./assets/main.js">
+    </script>
+</body>
+
+</html>
